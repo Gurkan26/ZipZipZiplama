@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragmentAnaEkran">
+
+    <fragment
+        android:id="@+id/fragmentAnaEkran"
+        android:name="com.gurkan.zipzipziplamaca.FragmentAnaEkran"
+        android:label="fragment_ana_ekran"
+        tools:layout="@layout/fragment_ana_ekran" >
+        <action
+            android:id="@+id/action_fragmentAnaEkran_to_fragmentCevapAnahtari"
+            app:destination="@id/fragmentCevapAnahtari" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCevapAnahtari"
+        android:name="com.gurkan.zipzipziplamaca.FragmentCevapAnahtari"
+        android:label="fragment_cevap_anahtari"
+        tools:layout="@layout/fragment_cevap_anahtari" >
+        <action
+            android:id="@+id/action_fragmentCevapAnahtari_to_fragmentAnaEkran"
+            app:destination="@id/fragmentAnaEkran" />
+    </fragment>
+</navigation>

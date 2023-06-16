@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.gurkan.zipzipziplamaca'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.gurkan.zipzipziplamaca"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -28,7 +28,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     buildFeatures{
         viewBinding true

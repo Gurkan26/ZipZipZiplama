@@ -17,15 +17,14 @@ class FragmentCevapAnahtari : Fragment() {
         binding= FragmentCevapAnahtariBinding.inflate(inflater,container,false)
 
         binding.buttonCevap.setOnClickListener{
-
-            if(binding.editTextTextPersonName.text.equals("75")&&binding.editTextTextPersonName2.text.equals("95")&&binding.editTextTextPersonName3.text.equals("70")){
-                Toast.makeText(requireContext(),"Tebrikler cevaplarınız doğru!",Toast.LENGTH_SHORT).show()
-
+            if(Integer.parseInt(binding.editTextTextPersonName.text.toString()) == 75
+                && Integer.parseInt(binding.editTextTextPersonName2.text.toString()) == 95
+                && Integer.parseInt(binding.editTextTextPersonName3.text.toString()) == 70) {
+                Toast.makeText(requireContext(), "Tebrikler cevaplarınız doğru!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(requireContext(), "Cevaplarınız yanlış!", Toast.LENGTH_SHORT).show();
             }
-            else{
-                Toast.makeText(requireContext(),"Cevaplarınız yanlış!",Toast.LENGTH_SHORT).show()
 
-            }
         }
 
 
